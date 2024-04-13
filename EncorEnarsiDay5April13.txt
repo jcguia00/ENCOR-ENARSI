@@ -1402,20 +1402,20 @@ no shut
 end 
 
 @I1(RST)/R1
-conf t
-hostname ISP1-r1
-int lo 0
- no ip add
-int e1/2
- shut
- no ip add
-int e1/1
-ip add 10.0.3.1 255.255.255.0
-no shut
-int e1/3
-ip add 10.0.2.1 255.255.255.0
-no shut
-end
+	conf t
+	hostname ISP1-r1
+	int lo 0
+	 no ip add
+	int e1/2
+	 shut
+	 no ip add
+	int e1/1
+	ip add 10.0.3.1 255.255.255.0
+	no shut
+	int e1/3
+	ip add 10.0.2.1 255.255.255.0
+	no shut
+	end
 
 
 
@@ -1432,6 +1432,7 @@ int e1/3
  no shut
  no ip add
 int e1/2
+no shut
  ip add 10.0.23.2 255.255.255.0
 int e1/1
  ip add 10.0.2.2 255.255.255.0
